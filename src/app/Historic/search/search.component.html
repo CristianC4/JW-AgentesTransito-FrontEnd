@@ -1,0 +1,44 @@
+<div id="historic " class="form-control">
+    <legend>Historico de Agentes & Vias</legend>
+    <div id="search-historic " class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler " type="button " data-toggle="collapse " data-target="#navbarTogglerDemo01 " aria-controls="navbarTogglerDemo01 " aria-expanded="false " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse me-lg-auto" id="navbarTogglerDemo01 ">
+                <form class="d-flex ">
+                    <input class="form-control mr-sm-2 " type="search " placeholder="Ej: 1999999" aria-label="Search" [(ngModel)]="id_agent" name="id_agent">
+                    <button (click)="searchHistoricByAgent(id_agent)" class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Buscar por Agente</button>
+                </form>
+            </div>
+            <div class="collapse navbar-collapse me-lg-auto" id="navbarTogglerDemo01 ">
+                <form class="d-flex ">
+                    <input class="form-control mr-sm-2 " type="search " placeholder="Ej: Calle" aria-label="Search Street" [(ngModel)]="street" name="street">
+                    <input class="form-control mr-sm-2 " type="search " placeholder="Ej: 100" aria-label="Search Number" [(ngModel)]="number_street" name="numberStreet">
+                    <button (click)="searchHistoricByStreet(street,number_street)" class="btn btn-outline-success my-2 my-sm-0 " type="submit ">Buscar por Calle</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+</div>
+<div id="list-historic " class="container-fluid mt-4">
+    <table class="table table-dark table-striped ">
+        <thead>
+            <tr>
+                <th scope="col ">ID Agente</th>
+                <th scope="col ">Nombre Agente</th>
+                <th scope="col ">Cll / Cra</th>
+                <th scope="col ">Numero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tables of table">
+                <th scope=" row ">{{tables[0]}}</th>
+                <td>{{tables[1]}}</td>
+                <td>{{tables[2]}}</td>
+                <td>{{tables[3]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,18 @@
+<div id="register-agent" class="col-sm">
+    <form class="form-control">
+        <legend>Registrar Asignacion Agente & Via</legend>
+        <div class="mb-3">
+            <label for="id_historic" class="form-label">ID Historico: </label>
+            <input type="text" id="id_historic" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="historic.id_historic" name="idHistoric">
+        </div>
+        <div class="mb-3">
+            <label for="id_agent_historic" class="form-label">ID Agente: </label>
+            <input type="text" id="id_agent_historic" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="historic.id_agent" name="idAgent">
+        </div>
+        <div class="mb-3">
+            <label for="id_route_historic" class="form-label">ID Via: </label>
+            <input type="text" id="id_route_historic" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="historic.id_route" name="idRoute">
+        </div>
+        <button (click)="createHistoric(historic)" type="submit" class="btn btn-success">Registrar</button>
+    </form>
+</div>

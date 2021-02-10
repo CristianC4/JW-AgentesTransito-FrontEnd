@@ -1,0 +1,22 @@
+<div id="update-agent" class="col-sm">
+    <form class="form-control">
+        <legend>Actualizar Agente</legend>
+        <div class="mb-3">
+            <label for="id-agent-up" class="form-label">Codigo: </label>
+            <input type="text" id="id-agente-up" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="agent.id_agent" name="idAgent" value="{{agent.id_agent}}">
+        </div>
+        <div class=" mb-3 ">
+            <label for="name-agent-up " class="form-label ">Nombre Completo: </label>
+            <input type="text " id="name-agent-up " class="form-control " placeholder="Ej: Carlos Manrique " [(ngModel)]="agent.name_agent " name="nameAgent" value="{{agent.name_agent}}">
+        </div>
+        <div class="mb-3 ">
+            <label for="years-agent-up " class="form-label ">Años de Experiencia: </label>
+            <input type="text " id="years-agent-up " class="form-control " placeholder="Ej: 15.5 " [(ngModel)]="agent.experience_years " name="experienceYears" value="{{agent.experience_years}}">
+        </div>
+        <div class="mb-3 ">
+            <label for="code-agent-secret-up " class="form-label ">Codigo de Secretaría: </label>
+            <input type="text " id="code-agent-secret-up " class="form-control " placeholder="Ej: 4 " [(ngModel)]="agent.id_secretary_traffic " name="idSecretaryTraffic" value="{{agent.id_secretary_traffic}}">
+        </div>
+        <button (click)="updateAgent(agent)" type="submit" class="btn btn-warning">Actualizar</button>
+    </form>
+</div>

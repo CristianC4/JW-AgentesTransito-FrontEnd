@@ -1,0 +1,10 @@
+<div id="delete-agent" class="col-sm">
+    <form class="form-control">
+        <legend>Eliminar Agente</legend>
+        <div class="mb-3">
+            <label for="id-agent-del" class="form-label">Codigo: </label>
+            <input type="text" id="id-agente-del" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="id_agent" name="idAgent">
+            <button (click)="deleteAgent(id_agent)" type="submit" class="btn btn-danger mt-2">Eliminar</button>
+        </div>
+    </form>
+</div>

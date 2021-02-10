@@ -1,0 +1,26 @@
+<div id="register-route " class="col-sm ">
+    <form class="form-control ">
+        <legend>Registrar Via</legend>
+        <div class="mb-3 ">
+            <label for="id-route " class="form-label ">ID: </label>
+            <input type="text " id="id-route " class="form-control " placeholder="Ej: 1234567891" [(ngModel)]="route.id_route" name="idRoute">
+        </div>
+        <div class="mb-3 ">
+            <label for="type-route " class="form-label ">Tipo de Ruta: </label>
+            <input type="text " id="type-route " class="form-control " placeholder="Ej: Carretera Principal" [(ngModel)]="route.type_route" name="typeRoute">
+        </div>
+        <div class="mb-3 ">
+            <label for="street-route " class="form-label ">Calle o Carrera: </label>
+            <input type="text " id="street-route " class="form-control " placeholder="Ej: Carrera" [(ngModel)]="route.street" name="idStreet">
+        </div>
+        <div class="mb-3 ">
+            <label for="number-route " class="form-label ">Numero: </label>
+            <input type="text " id="number-route " class="form-control " placeholder="Ej: 180" [(ngModel)]="route.number_street" name="idNumberStreet">
+        </div>
+        <div class="mb-3 ">
+            <label for="lvl-route " class="form-label ">Nivel de Congestion: </label>
+            <input type="text " id="lvl-route " class="form-control " placeholder="Ej: 54.5" [(ngModel)]="route.level_congestion" name="idLevelCongestion">
+        </div>
+        <button (click)="createRoute(route)" type="submit " class="btn btn-success ">Registrar</button>
+    </form>
+</div>

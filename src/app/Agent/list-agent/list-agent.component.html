@@ -1,0 +1,29 @@
+<div class="container">
+    <div id="agent" class="form-control">
+        <div class="container">
+            <div class="row">
+                <div id="list-agents">
+                    <legend>Agentes Inscritos</legend>
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Años Exp</th>
+                                <th scope="col">Secretaria</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let agent of agents">
+                                <th scope="row">{{agent.id_agent}}</th>
+                                <td>{{agent.name_agent}}</td>
+                                <td>{{agent.experience_years}}</td>
+                                <td>{{agent.id_secretary_traffic}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div id="register-agent" class="col-sm">
+    <form class="form-control">
+        <legend>Registrar Agente</legend>
+        <div class="mb-3">
+            <label for="id_agent" class="form-label">Codigo: </label>
+            <input type="text" id="id_agent" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="agent.id_agent" name="idAgent">
+        </div>
+        <div class="mb-3">
+            <label for="name_agent" class="form-label">Nombre Completo: </label>
+            <input type="text" id="name_agent" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="agent.name_agent" name="nameAgent">
+        </div>
+        <div class="mb-3">
+            <label for="experience_years" class="form-label">Años de Experiencia: </label>
+            <input type="text" id="experience_years" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="agent.experience_years" name="experienceYears">
+        </div>
+        <div class="mb-3">
+            <label for="id_secretary_traffic" class="form-label">Codigo de Secretaría: </label>
+            <input type="text" id="id_secretary_traffic" class="form-control" placeholder="Ej: 1234567891" [(ngModel)]="agent.id_secretary_traffic" name="idSecretaryTraffic">
+        </div>
+        <button (click)="createAgent(agent)" type="submit" class="btn btn-success">Registrar</button>
+    </form>
+</div>

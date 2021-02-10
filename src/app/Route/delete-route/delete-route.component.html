@@ -1,0 +1,10 @@
+<div id="delete-route " class="col-sm ">
+    <form class="form-control ">
+        <legend>Eliminar Via</legend>
+        <div class="mb-3 ">
+            <label for="id-route-del " class="form-label ">Codigo: </label>
+            <input type="text " id="id-route-del " class="form-control " placeholder="Ej: 1234567891" [(ngModel)]="id_route" name="idRoute">
+            <button (click)="deleteRoute(id_route)" type="submit " class="btn btn-danger mt-2 ">Eliminar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+<div id="list-routes ">
+    <legend>Vias Inscritas</legend>
+    <table class="table table-dark table-striped ">
+        <thead>
+            <tr>
+                <th scope="col ">ID</th>
+                <th scope="col ">Tipo</th>
+                <th scope="col ">Cll / Cra</th>
+                <th scope="col ">Numero</th>
+                <th scope="col ">Congestion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let route of routes">
+                <th scope="row ">{{route.id_route}}</th>
+                <td>{{route.type_route}}</td>
+                <td>{{route.street}}</td>
+                <td>{{route.number_street}}</td>
+                <td>{{route.level_congestion}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

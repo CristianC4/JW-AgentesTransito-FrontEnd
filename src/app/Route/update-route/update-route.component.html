@@ -1,0 +1,26 @@
+<div id="update-route " class="col-sm ">
+    <form class="form-control ">
+        <legend>Actualizar Via</legend>
+        <div class="mb-3 ">
+            <label for="id-route-del " class="form-label ">ID: </label>
+            <input type="text " id="id-route-del " class="form-control " placeholder="Ej: 1234567891" [(ngModel)]="route.id_route" name="idRoute">
+        </div>
+        <div class="mb-3 ">
+            <label for="type-route-del " class="form-label ">Tipo de Ruta: </label>
+            <input type="text " id="type-route-del " class="form-control " placeholder="Ej: Carretera Principal" [(ngModel)]="route.type_route" name="typeRoute">
+        </div>
+        <div class="mb-3 ">
+            <label for="street-route-del " class="form-label ">Calle o Carrera: </label>
+            <input type="text " id="street-route-del " class="form-control " placeholder="Ej: Carrera" [(ngModel)]="route.street" name="street">
+        </div>
+        <div class="mb-3 ">
+            <label for="number-route-del " class="form-label ">Numero: </label>
+            <input type="text " id="number-route-del " class="form-control " placeholder="Ej: 180" [(ngModel)]="route.number_street" name="numberStreet">
+        </div>
+        <div class="mb-3 ">
+            <label for="lvl-route-del " class="form-label ">Nivel de Congestion: </label>
+            <input type="text " id="lvl-route-del " class="form-control " placeholder="Ej: 54.4" [(ngModel)]="route.level_congestion" name="levelCongestion">
+        </div>
+        <button (click)="updateRoute(route)" type="submit " class="btn btn-warning ">Actualizar</button>
+    </form>
+</div>
